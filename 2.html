@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Overpass+Mono" rel="stylesheet">
+<title>Voting Ease Login</title>
+<style>
+    body {
+        background-image: url(https://c8.alamy.com/comp/2AREK2F/traditional-symbols-of-india-seamless-pattern-on-white-2AREK2F.jpg);
+        font-family: 'Overpass Mono', monospace;
+    }
+    #wrapper {
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .main-content {
+        width: 370px;
+        background-color: #ffffff;
+        border: 2px solid #e6e6e6;
+        padding: 40px;
+        font-size: 18px;
+        margin: auto;
+    }
+    .input-field {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    .button {
+        width: 100%;
+        background-color: #3897f0;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .button:hover {
+        background-color: #005cb3;
+    }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="main-content">
+            <h1>Voting Ease &#9763;</h1>
+            <h2>Sign In</h2>
+            <form action="./a.php" method="POST">
+                <input type="text" name="mobile" placeholder="Mobile Number" class="input-field" required />
+                <input type="text" name="aadhar" placeholder="Aadhar Number" class="input-field" required />
+                <input type="password" name="password" placeholder="Password" class="input-field" required />
+                <button type="submit" class="button">Next</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

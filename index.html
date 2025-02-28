@@ -1,0 +1,77 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>votibg app</title>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+<style>
+        /*--------animation01
+         design shell------- */
+ .animation01 {
+            position: absolute;
+            width: 100%;    height: 100%;
+            background-image: url(https://cloudfront.penguin.co.in/wp-content/uploads/2019/05/Election_Header.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;} .animation01 .line_content {
+            width: 100%;   height: 50%;
+  animation: animation01_content 0.3s ease-in forwards;}
+ .animation01 .line_content01 {
+            transform-origin: bottom; }
+.animation01 .line_content02 {
+            transform-origin: top; }
+ .animation01 .line_wrapper {
+            width: 100%;  height: 100%; }
+ .animation01 .line_wrapper01 {
+            transform-origin: bottom;
+            animation: animation01_wrapper01 1.3s ease-in-out 1.3s forwards; }
+ .animation01 .line_wrapper02 {
+            transform-origin: top;
+            animation: animation01_wrapper02 1.3s ease-in-out 1.3s forwards; } .animation01 .line01 {
+   width: 100%;   height: 50%;
+            background: linear-gradient(#f38110, #f8f8f8);  }
+  .animation01 .line02 {
+            width: 100%;   height: 50%;
+  background: linear-gradient(#f8f8f8, #368e0b); }
+  @keyframes animation01_content {
+            0% {  transform: scale3d(1, 0, 1); }
+100% {  transform: scale3d(1, 1, 1);  } }
+ @keyframes animation01_wrapper01 {
+            0% { transform: translateY(0); } 100% {  transform: translateY(-50vw);  }}  @keyframes animation01_wrapper02 {
+            0% { transform: translateY(0); }
+100% {transform: translateY(50vw);  }}
+/*--------name 
+        design shell----*/
+ .name {   position: absolute;
+            top: 25%;   left: 31%;
+            transform: translate(-50%, -50%);
+    color: #0c116c;   font-size: 5vw;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            animation: name 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) 2.5s forwards;
+            opacity: 0;}
+@keyframes name {
+            0% {   opacity: 0;    }
+   100% {  opacity: 1;} }
+</style>     </head>
+<body>
+<div class="animation01">
+<div class="line_content line_content01">
+<div class="line_wrapper line_wrapper01">
+<div class="line01"></div>
+<div class="line02"></div>
+</div>    </div>
+<div class="line_content line_content02">
+<div class="line_wrapper line_wrapper02">
+<div class="line02"></div>
+<div class="line01"></div>
+</div>    </div>     </div>
+<div class="name">Welcome to Vote Ease</div>
+</body>
+<script>
+        setTimeout(function() {
+            window.location.href = "2.html"; // Replace with your target file
+        }, 4000); // 4 seconds
+    </script>
+    
+</html>

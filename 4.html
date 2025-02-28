@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="vot.js">
+<title>Voting App</title>
+<style>
+        body {  font-family: Arial, sans-serif;
+            margin: 0;  padding: 0;
+            background-color: #f0f0f0;}
+header { background: linear-gradient(#f66e05, #f0f0f0, #31840d);
+            color: #fcf8f8;   text-align: center;
+            padding: 20px 0;}
+main {  max-width: 800px;
+  margin: 0 auto;  padding: 20px;}
+.voting-section {
+            /* background-color: #ffffff; */
+   border-radius: 15px;   padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-image: url(https://img.freepik.com/free-vector/decorative-tricolor-indian-flag-theme-texture_1055-7757.jpg?w=740&t=st=1694520528~exp=1694521128~hmac=9c5140b10b5a0c85d9d2854fa8bba5cd221c0d622fa1c26252c0ccc4ae852ed5);
+            /* background-image: url(https://www.freepnglogos.com/uploads/indian-flag-png/indian-flag-india-flag-png-transparent-vector-clipart-downloads-8.png); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+  h1 {color: #57158c;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 48px;}
+h2 {  color: #1a1919;   }
+form {   margin-top: 20px;   }
+label {  display: block;
+ margin-bottom: 5px;  font-weight: bold;}
+input[type="text"],
+  select {  width: 100%;
+   padding: 10px;   margin-bottom: 15px;
+ border: 1px solid #ccc; border-radius: 3px;}
+  button {background-color: #000000;
+            color: #fff;   padding: 10px 20px;
+      border: none;   border-radius: 3px;
+            cursor: pointer;}
+button:hover { background-color: #555;}
+footer {  text-align: center;
+background: linear-gradient(#e8700e, #fcf8f8, #169a05);
+            /* background-image: url(https://img.freepik.com/free-vector/stylish-wavy-indian-flag-theme-background_1055-7109.jpg?w=826&t=st=1694524877~exp=1694525477~hmac=e05427623ab1f805e93d0d0e9ae6f5d293a9b43692ab8689fb7d5cf0cb83f277);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
+   color: #57128c;   padding: 10px 0;}
+/* Add any additional styling or functionality as needed. */
+</style>     </head>
+<body>
+<header>
+<h1>Voting Ease &#9763;</h1>
+</header>
+<main>
+<section class="voting-section">
+<h2><strong><em>Vote for Your Candidate</em></strong></h2>
+<form id="vote-form">
+<label for="name">Voter's Name:</label>
+<input type="text" id="name" required>
+<label for="Address">Voter's Address:</label>
+<input type="text" id="Address" required>
+<br>
+<div><label for="Dateofbirth">Voter's DOB:</label>
+<input type="date" id="Dateofbirth" required>
+</div><br>
+<label for="Phone">Voter's Mobile Number:</label>
+<input type="text" id="Phone" required>
+<label for="aadhar">Voter's Aadhar card Number:</label>
+<input type="text" id="aadhar" required>
+<label for="candidates">Select a Candidate:</label>
+<select id="candidates" required>
+<option value="1">Select Candidate</option>
+<option value="1">Candidate1</option>
+<option value="2">Candidate2</option>
+<option value="3">Candidate3</option>
+<option value="4">Candidate4</option>
+<option value="5">Candidate5</option>
+</select>
+<button type="reset">clear</button>
+<button type="submit" onclick="
+  location.href='st.html';
+                ">Vote</button>
+</form>   </section>    </main>
+<footer>
+<div><span>&copy; 2023 Voting Ease</span></div>
+<span>By UP15 Coders</span>
+</footer>    </body>    </html>
